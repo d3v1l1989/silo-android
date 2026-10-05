@@ -1262,6 +1262,7 @@ fun TvAppNavigation(
                 initialSubtitleAutoResolved = subtitleAutoResolved,
                 autoAdvanceCount = autoAdvanceCount,
                 episodeSelectionHandoff = episodeSelectionHandoff,
+                navigationSettled = !transition.isRunning,
                 onExit = { navController.popBackStack() },
             )
         }
